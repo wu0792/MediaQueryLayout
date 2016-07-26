@@ -62,3 +62,9 @@ viewport 视口
 布局视口(layout viewport)
 可视视口(visual viewport)
 理想视口(ideal viewport)
+
+===============================================
+**强制使用最新版本的IE文档模式**
+```html
+<meta http-equiv="x-ua-compatible" content="id=edge">
+```
