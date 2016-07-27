@@ -68,3 +68,16 @@ viewport 视口
 ```html
 <meta http-equiv="x-ua-compatible" content="id=edge">
 ```
+
+===============================================
+**cssreset.css** 用来消除所有浏览器在一些默认样式上面的差异
+**[normailize.css](https://necolas.github.io/normalize.css/)** 是 ** cssreset.css ** 的优化版本，使用更加广泛
+
+===============================================
+长度单位： px, em, rem
+使用相对的值，不同的显示屏尺寸会有变化
+px : 固定的单位
+em : 相对的长度单位，参照了父元素的font-size，具有继承的特点，如果一直找父容器都找不到font-size，那会使用浏览器的默认em设置：1em = 16px
+rem ：也是使用相对值，不过是参照了 html 元素，浏览器的默认值也是：1rem = 16px
+
+
