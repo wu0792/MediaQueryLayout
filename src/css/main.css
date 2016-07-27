@@ -73,3 +73,156 @@ li{
     background-color: transparent;
     border: 0;
 }
+
+.clearfix:before,
+.clearfix:after{
+    content: '.';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/*****************
+* 浏览器更新提示
+****************/
+.browserupgrade{
+    margin: 0;
+    padding: 0;
+    background-color: #888;
+}
+
+/*****************
+* 自定义页面样式
+****************/
+body{
+    font-size: 1.2rem;
+    line-height: 1.5;
+    background-color: #f7f7f7;
+}
+
+a{
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover, a:active{
+    color: #0ae;
+    text-decoration: underline;
+}
+
+/*****************
+* 网站头部
+****************/
+header{
+    width: 100%;
+}
+
+header .top{
+    line-height: 3rem;
+    padding: 0 1.5rem;
+    color: #fff;
+    background: #555;
+    border-bottom: 1px #ecc000 solid;
+}
+
+header .top .tel{
+    float: left;
+}
+
+header .top ul{
+    text-align: right;
+}
+
+header .top ul li{
+    display: inline-block;
+}
+
+header .top ul li + li{
+    border-left: 1px solid #999;
+    margin-left: -3px;
+}
+
+header .top ul li a{
+    display: inline-block;
+    padding: 0 1.5rem;
+    color: #fff;
+}
+
+/*****************
+* 主要内容
+****************/
+.container{
+    width: 100%;
+}
+
+/*****************
+* 底部导航
+****************/
+footer{
+    width: 100%;
+    padding: 3rem 0 5rem;
+    background-color: #ededed;
+}
+
+footer ul{
+    text-align: center;
+}
+
+footer ul li{
+    display: inline-block;
+}
+
+footer ul li .icon{
+    display: inline-block;
+    text-indent: -999rem;
+    margin-right: 1.5rem;
+    background-image: url('../img/cert1.png');
+    background-repeat: no-repeat;
+    background-size: 466px 447px;
+    overflow: hidden;
+}
+
+footer ul li .iocn-zfywxk{
+    width: 38px;
+    height: 27px;
+    background-position: -369px -45px;
+}
+
+footer ul li .iocn-pcirz{
+    width: 78px;
+    height: 27px;
+    background-position: -110px -96px;
+}
+
+footer ul li .iocn-visayz{
+    width: 36px;
+    height: 27px;
+    background-position: -426px -90px;
+}
+
+footer ul li .iocn-vsjmfw{
+    width: 63px;
+    height: 27px;
+    background-position: -401px -186px;
+}
+
+footer ul li .iocn-wlgs{
+    width: 78px;
+    height: 27px;
+    background-position: -110px -96px;
+}
+
+footer ul li .iocn-rzcx{
+    width: 75px;
+    height: 27px;
+    background-position: 0 -320px;
+}
+
+footer ul li .iocn-bjgs{
+    width: 30px;
+    height: 30px;
+    margin-right: 0;
+    background-size: 30px;
+    background-image: url('../img/cert2.png');
+}
