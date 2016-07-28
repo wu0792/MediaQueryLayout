@@ -1,72 +1,66 @@
-/*****************
-* 页面样式
-****************/
 
-/*****************
-* 基本默认值
-****************/
-
-html{
+html {
     font-size: 62.5%;
     color: #222;
 }
 
-::selection{
+::selection {
     background-color: #b3d4fc;
     text-shadow: none;
 }
 
-ul{
+ul {
     margin: 0;
     padding: 0;
 }
 
-li{
+li {
     list-style: none;
 }
 
-/*****************
-* 工具样式
-****************/
-.center-block{
+/* ==========
+   工具样式
+   ========== */
+
+.center-block {
     display: block;
     margin-right: auto;
     margin-left: auto;
 }
 
-.pull-right{
+.pull-right {
     float: right !important;
 }
 
-.pull-left{
+.pull-left {
     float: left !important;
 }
 
-.text-right{
+.text-right {
     text-align: right !important;
 }
 
-.text-left{
+.text-left {
     text-align: left !important;
 }
 
-.text-center{
+.text-center {
     text-align: center !important;
 }
 
-.hide{
+.hide {
     display: none !important;
 }
 
-.show{
+.show {
     display: block !important;
 }
 
-.invisible{
+.invisible {
     visibility: hidden;
 }
 
-.text-hide{
+.text-hide {
     font: 0/0 a;
     color: transparent;
     text-shadow: none;
@@ -75,50 +69,52 @@ li{
 }
 
 .clearfix:before,
-.clearfix:after{
-    content: '.';
-    display: block;
-    height: 0;
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
     clear: both;
-    visibility: hidden;
 }
 
-/*****************
-* 浏览器更新提示
-****************/
-.browserupgrade{
+/* ===============
+   浏览器更新提示
+   =============== */
+
+.browserupgrade {
     margin: 0;
-    padding: 0;
-    background-color: #888;
+    padding: 1rem;
+    background: #ccc;
 }
 
-/*****************
-* 自定义页面样式
-****************/
-body{
+/* ===============
+   自定义页面样式
+   =============== */
+
+body {
     font-size: 1.2rem;
     line-height: 1.5;
     background-color: #f7f7f7;
 }
 
-a{
+a {
     color: #666;
     text-decoration: none;
 }
 
-a:hover, a:active{
+a:hover, a:active {
     color: #0ae;
     text-decoration: underline;
 }
 
-/*****************
-* 网站头部
-****************/
-header{
+/* 网站头部 */
+
+header {
     width: 100%;
 }
 
-header .top{
+header .top {
     line-height: 3rem;
     padding: 0 1.5rem;
     color: #fff;
@@ -126,27 +122,80 @@ header .top{
     border-bottom: 1px #ecc000 solid;
 }
 
-header .top .tel{
+header .top .tel {
     float: left;
 }
 
-header .top ul{
+header .top ul {
     text-align: right;
 }
 
-header .top ul li{
+header .top ul li {
     display: inline-block;
 }
 
-header .top ul li + li{
+header .top ul li + li {
     border-left: 1px solid #999;
     margin-left: -3px;
 }
 
-header .top ul li a{
+header .top ul li a {
     display: inline-block;
     padding: 0 1.5rem;
     color: #fff;
+}
+
+@media only screen and (max-width: 50em) {
+    header .top ul li a {
+        padding: 0 1rem;
+    }
+}
+
+@media only screen and (min-width: 30.0625em) and (max-width: 50em) {
+
+}
+
+@media only screen and (max-width: 30em) {
+    header .top .tel,
+    header .top ul li:nth-child(3),
+    header .top ul li:nth-child(4) {
+        display: none;
+    }
+}
+
+header .main {
+    padding: 0;
+}
+
+header .main .brand {
+    float: left;
+    padding: 1rem 1.5rem 0;
+}
+
+header .main ul {
+    text-align: right;
+}
+
+header .main ul li {
+    display: inline-block;
+    border-left: 1px solid #f0ede9;
+}
+
+header .main ul li a {
+    display: inline-block;
+    padding: 0 2.5rem;
+    line-height: 5.5rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #7c7a65;
+    text-decoration: none;
+}
+
+header .main ul li a:hover,
+header .main ul li a:active,
+header .main ul li a.active {
+    color: #ffb300;
+    background-color: #f8f6f1;
 }
 
 /*****************
@@ -225,4 +274,10 @@ footer ul li .iocn-bjgs{
     margin-right: 0;
     background-size: 30px;
     background-image: url('../img/cert2.png');
+}
+
+footer p{
+    text-align: center;
+    color: #666;
+    font-size: 1.2rem;
 }
