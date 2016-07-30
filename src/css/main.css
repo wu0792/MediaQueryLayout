@@ -145,24 +145,6 @@ header .top ul li a {
     color: #fff;
 }
 
-@media only screen and (max-width: 50em) {
-    header .top ul li a {
-        padding: 0 1rem;
-    }
-}
-
-@media only screen and (min-width: 30.0625em) and (max-width: 50em) {
-
-}
-
-@media only screen and (max-width: 30em) {
-    header .top .tel,
-    header .top ul li:nth-child(3),
-    header .top ul li:nth-child(4) {
-        display: none;
-    }
-}
-
 header .main {
     padding: 0;
 }
@@ -178,12 +160,15 @@ header .main ul {
 
 header .main ul li {
     display: inline-block;
+}
+
+header .main ul li + li {
     border-left: 1px solid #f0ede9;
 }
 
 header .main ul li a {
     display: inline-block;
-    padding: 0 2.5rem;
+    padding: 0 2rem;
     line-height: 5.5rem;
     font-size: 1.6rem;
     font-weight: bold;
@@ -203,6 +188,106 @@ header .main ul li a.active {
 ****************/
 .container{
     width: 100%;
+}
+
+.transaction{
+    width: 100%;
+    background-color: #7C7365;
+}
+
+.trans-content{
+    font-size: 1.4rem;
+    padding-left: 1.5rem;
+}
+
+.trans-data, .trans-report{
+    line-height: 2.0rem;
+    font-size: 1.4rem;
+}
+
+.trans-data{
+    float: left;
+    margin: 1rem .5rem 1rem 1rem;
+    color: #fff;
+}
+
+.trans-data span{
+    margin: 0 2px;
+}
+
+.trans-money{
+    border-radius: .3rem;
+    background-color: #F2F1F0;
+    color: #FBA400;
+    display: inline-block;
+    padding: .5rem 1rem;
+    letter-spacing: 3px;
+    box-shadow: 1px 2px 1px #333 inset;
+    font-size: 2rem;
+}
+
+.trans-report{
+    text-align: right;
+    margin: 1rem .5rem 1rem 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.trans-report a{
+    color: #fff;
+}
+
+.ad{
+    width: 100%;
+    overflow: hidden;
+}
+
+.ad .item{
+    display: none;
+}
+
+.ad .item img{
+    width: 100%;
+}
+
+.active{
+    display: block !important;
+}
+
+.feature{
+    margin: 2rem;
+    font-size: 0;
+}
+
+.feature .item{
+    /*需要减掉item之间的margin-left总和（1.5rem*2)、3个item的左右border宽度和（2px*2*3），
+      或者item使用 box-sizing: border-box; 就不需要减掉border */
+    width: calc(33.333333333333% - 1rem - 4px);
+    display: inline-block;
+    border: solid 2px #E6E6E6;
+    border-radius: 2px;
+}
+
+.feature .item + .item{
+    margin-left: 1.5rem;
+}
+
+.feature .item h3{
+    width: 30%;
+    float: left;
+    font-size: 2rem;
+    color: #FF9900;
+    margin: 2rem 0 0 2rem;
+}
+
+.feature .item ul{
+    margin: 1rem;
+    display: inline-block;
+}
+
+.feature .item ul li{
+    color: #999999;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
 }
 
 /*****************
