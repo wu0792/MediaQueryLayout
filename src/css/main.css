@@ -197,7 +197,7 @@ header .main ul li a.active {
 
 .trans-content{
     font-size: 1.4rem;
-    padding-left: 1.5rem;
+    padding: .5rem 0 .2rem 1.5rem;
 }
 
 .trans-data, .trans-report{
@@ -207,12 +207,11 @@ header .main ul li a.active {
 
 .trans-data{
     float: left;
-    margin: 1rem .5rem 1rem 1rem;
     color: #fff;
 }
 
 .trans-data span{
-    margin: 0 2px;
+    margin: 2px;
 }
 
 .trans-money{
@@ -220,7 +219,7 @@ header .main ul li a.active {
     background-color: #F2F1F0;
     color: #FBA400;
     display: inline-block;
-    padding: .5rem 1rem;
+    padding: .2rem 1rem;
     letter-spacing: 3px;
     box-shadow: 1px 2px 1px #333 inset;
     font-size: 2rem;
@@ -228,7 +227,6 @@ header .main ul li a.active {
 
 .trans-report{
     text-align: right;
-    margin: 1rem .5rem 1rem 1rem;
     padding: 0.5rem 1rem;
 }
 
@@ -253,7 +251,7 @@ header .main ul li a.active {
     display: block !important;
 }
 
-.feature{
+.feature, .notice, .product{
     margin: 2rem;
     font-size: 0;
 }
@@ -289,6 +287,162 @@ header .main ul li a.active {
     font-size: 1.4rem;
     line-height: 1.6rem;
 }
+
+.notice{
+    border: solid 2px #E6E6E6;
+    border-radius: 2px;
+    text-align: right;
+}
+
+.notice a:nth-child(1){
+    float: left;
+    margin: 0 2rem 0 1rem;
+}
+
+.notice a:nth-child(1):before{
+    content: '最新公告';
+    color: #AAAAAA;
+    margin: 0 2rem 0 0;
+}
+
+.notice a{
+    font-size: 1.4rem;
+    padding: .5rem 1rem;
+    line-height: 1.8rem;
+    display: inline-block;
+}
+
+.notice a:hover{
+    text-decoration: none;
+}
+
+.notice span{
+    color: #AAAAAA;
+    font-size: 1.2rem;
+}
+
+.notice .more{
+    display: inline-block;
+    text-align: right;
+    color: #F90;
+    padding: .5rem 2rem;
+}
+
+.notice .more:hover{
+    color: #FF7F27;
+}
+
+.product{
+    border: solid 2px #E6E6E6;
+    border-radius: 2px;
+    border-top: solid 2px #FF7F27;
+}
+
+.product h2{
+    font-size: 2.2rem;
+    width: 30%;
+    text-align: center;
+    padding: 5rem 2rem 0 0rem;
+    font-weight: normal;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+.product h2 em{
+    display: block;
+    width: 100%;
+    padding: .1rem;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.product .product-content{
+    display: inline-block;
+    width: 70%;
+}
+
+.product h3{
+    font-size: 2rem;
+    width: 20%;
+    float: left;
+    padding: 2rem 0;
+    margin: 0;
+    text-align: center;
+}
+
+.product h3,.info,.buy{
+    border-left: solid 1px #E6E6E6;
+    border-bottom: solid 1px #E6E6E6;
+    height: 7rem;
+    box-sizing: border-box;
+}
+
+.product .info p{
+    float: left;
+    width: 45%;
+    display: block;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.product h3{
+    font-size: 2rem;
+    display: inline-block;
+}
+
+.product .info{
+    margin: .5rem 1rem;
+    font-size: 1.6rem;
+    width: 60%;
+    float: left;
+    margin: 0;
+}
+
+.product .buy{
+    font-size: 1.6rem;
+    float: left;
+    width: calc(20%);
+    box-sizing: border-box;
+    line-height: 3rem;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.product .buy a{
+    display: inline-block;
+    width: 90%;
+    background-color: #F90;
+    border-radius: 2px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.product .buy a:hover{
+    background-color: #FF7F27;
+}
+
+.product .year-rate,.money{
+    font-size: 2.4rem;
+    color: #F90;
+    margin: 0 .5rem;
+}
+
+.invest-duration{
+    color: #F90;
+    font-size: 2.5rem;
+    padding: 0 .5rem;
+    font-weight: normal;
+}
+
+.invest-scope{
+    text-align: center;
+    color: #999999;
+    display: block;
+    font-weight: normal;
+    font-size: 1.2rem;
+}
+
 
 /*****************
 * 底部导航
