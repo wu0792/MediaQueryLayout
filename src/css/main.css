@@ -287,33 +287,19 @@ header .main ul li a.active {
     }
 }
 
-.ad{
-    width: 100%;
-    overflow: hidden;
-}
-
 .ad .item{
-    display: none;
-}
-
-.ad .item{
-    width: 100%;
-    height: 28.125rem;
     background-repeat: round;
 }
 
 .ad1{
-    width: 100%;
     background-image: url('../img/ad001-l.png');
 }
 
 .ad2{
-    width: 100%;
     background-image: url('../img/ad002-l.png');
 }
 
 .ad3{
-    width: 100%;
     background-image: url('../img/ad003-l.png');
 }
 
