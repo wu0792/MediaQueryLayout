@@ -337,10 +337,6 @@ header .main ul li a.active {
     }
 }
 
-.active{
-    display: block !important;
-}
-
 .feature, .notice, .product{
     margin: 1rem 5rem;
     font-size: 0;
