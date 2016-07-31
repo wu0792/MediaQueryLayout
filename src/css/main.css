@@ -140,7 +140,7 @@ header .top ul li + li {
 
 header .top ul li a {
     display: inline-block;
-    padding: 0 1.5rem;
+    padding: 0 1rem;
     color: #fff;
 }
 
@@ -156,7 +156,7 @@ header .main {
 
 header .main .brand {
     float: left;
-    padding: 1rem 1.5rem 0;
+    padding: 1rem 0 0 0;
 }
 
 header .main ul {
@@ -317,6 +317,40 @@ header .main ul li a.active {
     background-image: url('../img/ad003-l.png');
 }
 
+@media only screen and (max-width:50rem){
+    .ad1{
+        width: 100%;
+        background-image: url('../img/ad001-m.png');
+    }
+
+    .ad2{
+        width: 100%;
+        background-image: url('../img/ad002-m.png');
+    }
+
+    .ad3{
+        width: 100%;
+        background-image: url('../img/ad003-m.png');
+    }
+}
+
+@media only screen and (max-width:30rem){
+    .ad1{
+        width: 100%;
+        background-image: url('../img/ad001.png');
+    }
+
+    .ad2{
+        width: 100%;
+        background-image: url('../img/ad002.png');
+    }
+
+    .ad3{
+        width: 100%;
+        background-image: url('../img/ad003.png');
+    }
+}
+
 .active{
     display: block !important;
 }
@@ -356,6 +390,63 @@ header .main ul li a.active {
     color: #999999;
     font-size: 1.4rem;
     line-height: 1.6rem;
+}
+
+@media only screen and (max-width: 50rem){
+    .feature, .notice, .product {
+        margin: 1rem;
+    }
+
+    .feature .item h3 {
+        width: 100%;
+        float: none;
+        text-align: center;
+        margin: .5rem 0;
+    }
+
+    .feature .item ul {
+        text-align: center;
+        margin: 0;
+        width: 100%;
+    }
+
+    .feature .item ul:last-child {
+        margin-bottom: .8rem
+    }
+
+    .feature .item ul li {
+        font-size: 1.2rem;
+        display: inline-block;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 30rem){
+    .feature .item {
+        display: block;
+        width: 100%;
+    }
+
+    .feature .item + .item {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+    .feature .item h3 {
+        float: left;
+        width: 30%;
+        margin: 1.7rem 0 0 0;
+    }
+
+    .feature .item ul {
+        width: 60%;
+        padding: .5rem;
+        box-sizing: border-box;
+    }
+
+    .feature .item ul:last-child {
+        margin-bottom: 0;
+    }
 }
 
 .notice{
@@ -400,6 +491,34 @@ header .main ul li a.active {
 
 .notice .more:hover{
     color: #FF7F27;
+}
+
+@media only screen and (max-width:50rem){
+
+}
+
+@media only screen and (max-width:30rem){
+    .notice a:nth-child(1) {
+        margin: 0;
+        padding: 0.5rem;
+    }
+
+    .notice a:nth-child(1):before {
+        margin: 0.2rem;
+    }
+
+    .notice span {
+        display: none;
+    }
+
+    .notice .more {
+        padding: 0;
+        margin: 0.5rem;
+    }
+
+    .notice a {
+        font-size: 1.2rem;
+    }
 }
 
 .product{
@@ -508,6 +627,72 @@ header .main ul li a.active {
     margin: 0 .5rem;
 }
 
+@media only screen and (max-width:50rem){
+    .product h2 {
+        width: 100%;
+        padding: 0;
+        margin: .5rem;
+        font-size: 1.6rem;
+    }
+
+    .product h2 em {
+        display: inline-block;
+        width: auto;
+        font-size: 1.4rem;
+    }
+
+    .product .product-content {
+        width: 100%;
+    }
+
+    .product h3, .info, .buy, .buy-disabled {
+        border-top: solid 1px #E6E6E6;
+        border-left: none;
+        border-bottom: none;
+    }
+
+    .product .info, .buy, .buy-disabled {
+        border-left: solid 1px #E6E6E6;
+        border-bottom: solid 1px #E6E6E6;
+    }
+}
+
+@media only screen and (max-width:30rem){
+    .product h3, .info, .buy, .buy-disabled {
+        border-bottom: solid 1px #E6E6E6;
+        width: 30%;
+    }
+
+    .product .info, .buy, .buy-disabled {
+        width: 70%;
+    }
+
+    .product .buy, .buy-disabled {
+        border-left: none;
+        border-top: none;
+        width: 100%;
+        height: auto;
+        padding: .5rem;
+    }
+
+    .product .info p {
+        font-size: 1.2rem;
+    }
+
+    .product .year-rate, .money {
+        font-size: 1.6rem;
+        margin-left: -1rem;
+    }
+
+    .product h3, .info, .buy, .buy-disabled {
+    height: 5.5rem;
+    }
+
+    .product h3 {
+    padding-top: 1rem;
+    }
+}
+
 .invest-duration{
     color: #F90;
     font-size: 2.5rem;
@@ -568,6 +753,36 @@ header .main ul li a.active {
     margin: .6rem 0 0 .2rem;
     color: #666666;
     line-height: 1.6rem;
+}
+
+@media only screen and (max-width: 30rem){
+    .help-content{
+        padding: 0 1rem;
+    }
+
+    .help .brand {
+        display: none;
+    }
+
+    .help ul:nth-child(2) {
+        padding: 0;
+    }
+
+    .help ul {
+        margin-top: 1rem;
+        width: 20%;
+    }
+
+    .help ul li:first-child {
+        font-size: 1.2rem;
+    }
+
+    .help ul li+li {
+        font-size: 1.2rem;
+        margin: .6rem 0 0 0;
+    }
+
+
 }
 
 /*****************
@@ -646,4 +861,18 @@ footer p{
     color: #666;
     font-size: 1.2rem;
     margin: 2rem auto;
+}
+
+@media only screen and (max-width:30rem){
+    footer ul {
+        width: 90%;
+    }
+
+    footer ul li {
+        line-height: 2.2rem;
+    }
+
+    footer p {
+        margin: 1rem;
+    }
 }
