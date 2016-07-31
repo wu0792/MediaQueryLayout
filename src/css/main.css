@@ -211,7 +211,7 @@ header .main ul li a.active {
 }
 
 .trans-data span{
-    margin: 2px;
+    margin: .2rem 0 .2rem .5rem;
 }
 
 .trans-money{
@@ -252,7 +252,7 @@ header .main ul li a.active {
 }
 
 .feature, .notice, .product{
-    margin: 2rem;
+    margin: 1rem 5rem;
     font-size: 0;
 }
 
@@ -371,7 +371,7 @@ header .main ul li a.active {
     text-align: center;
 }
 
-.product h3,.info,.buy{
+.product h3,.info,.buy,.buy-disabled{
     border-left: solid 1px #E6E6E6;
     border-bottom: solid 1px #E6E6E6;
     height: 7rem;
@@ -399,7 +399,7 @@ header .main ul li a.active {
     margin: 0;
 }
 
-.product .buy{
+.product .buy,.buy-disabled{
     font-size: 1.6rem;
     float: left;
     width: calc(20%);
@@ -420,6 +420,16 @@ header .main ul li a.active {
 
 .product .buy a:hover{
     background-color: #FF7F27;
+}
+
+.product .buy-disabled a{
+    display: inline-block;
+    width: 90%;
+    background-color: #CCCCCC;
+    border-radius: 2px;
+    color: #fff;
+    text-decoration: none;
+    cursor: not-allowed;
 }
 
 .product .year-rate,.money{
@@ -443,6 +453,52 @@ header .main ul li a.active {
     font-size: 1.2rem;
 }
 
+/*****************
+* 帮助索引区
+****************/
+.help{
+    width: 100%;
+    border-top: solid 2px #E6E6E6;
+    border-bottom: solid 2px #E6E6E6;
+}
+
+.help .brand{
+    background-image: url('../../src/img/logo@1x.png');
+    float: left;
+    height: 35px;
+    width: 150px;
+    margin: 2rem 0 0 5rem;
+    box-sizing: border-box;
+}
+
+.help ul{
+    float: left;
+    width: calc(20% - 30px - 3rem);
+    padding-bottom: .5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.help ul:nth-child(2){
+    padding-left: 4rem;
+}
+
+.help li{
+    box-sizing: border-box;
+}
+
+.help ul li:first-child{
+    font-size: 1.5rem;
+    color: #000;
+    line-height: 2rem;
+}
+
+.help ul li+li{
+    font-size: 1.4rem;
+    margin: .6rem 0 0 .2rem;
+    color: #666666;
+    line-height: 1.6rem;
+}
 
 /*****************
 * 底部导航
@@ -519,4 +575,5 @@ footer p{
     text-align: center;
     color: #666;
     font-size: 1.2rem;
+    margin: 2rem auto;
 }
