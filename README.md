@@ -11,6 +11,7 @@ flexlayout website
 ###小屏效果：<30rem
 ![小图](https://github.com/wu0792/FlexLayout/tree/master/doc/design/s.png)
 
+###下面是一些笔记心得
 ================================================
 PART I：
 响应式网站的优点：
