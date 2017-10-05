@@ -1,17 +1,17 @@
 # FlexLayout
 flexlayout website
 
-##响应式布局，先看效果
-###大屏效果：>50rem
+## 响应式布局，先看效果
+### 大屏效果：>50rem
 ![大图](https://raw.githubusercontent.com/wu0792/FlexLayout/master/doc/design/l.png)
 
-###中屏效果：>30rem, <=50rem
+### 中屏效果：>30rem, <=50rem
 ![大图](https://raw.githubusercontent.com/wu0792/FlexLayout/master/doc/design/m.png)
 
-###小屏效果：<30rem
+### 小屏效果：<30rem
 ![小图](https://raw.githubusercontent.com/wu0792/FlexLayout/master/doc/design/s.png)
 
-###下面是一些笔记心得
+### 下面是一些笔记心得
 ================================================
 PART I：
 响应式网站的优点：
@@ -46,7 +46,7 @@ PART III：
     ...
 }
 
-#逻辑操作查询符：not and only , (, 等同于 or)
+# 逻辑操作查询符：not and only , (, 等同于 or)
 
 #css3媒体属性
 width: 视口宽度
