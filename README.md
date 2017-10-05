@@ -3,13 +3,13 @@ flexlayout website
 
 ## 响应式布局，先看效果
 ### 大屏效果：>50rem
-![大图](https://raw.githubusercontent.com/wu0792/FlexLayout/master/doc/design/l.png)
+![大图](https://raw.githubusercontent.com/wu0792/MediaQueryLayout/master/doc/design/l.png)
 
 ### 中屏效果：>30rem, <=50rem
-![大图](https://raw.githubusercontent.com/wu0792/FlexLayout/master/doc/design/m.png)
+![大图](https://raw.githubusercontent.com/wu0792/MediaQueryLayout/master/doc/design/m.png)
 
 ### 小屏效果：<30rem
-![小图](https://raw.githubusercontent.com/wu0792/FlexLayout/master/doc/design/s.png)
+![小图](https://raw.githubusercontent.com/wu0792/MediaQueryLayout/master/doc/design/s.png)
 
 ### 下面是一些笔记心得
 ================================================
